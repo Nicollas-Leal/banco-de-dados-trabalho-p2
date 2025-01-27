@@ -8,16 +8,16 @@ Repositório para a matéria de banco de dados (CEFET)
 ## **Objetivos**
   ✅ **Escolher uma das bases em SQlite disponibilizadas nesse trabalho.** Dois grupos não podem escolher a mesma  
   ✅ **Pgloader para carregar os dados do SQlite para o Postgres**  
-  ✅ **3 Views**
+  ✅ **3 Views**  
   ✅ **3 Functions**  
-  ❌ **3 Procedures** 
-  ❌ **3 Triggers**
+  ❌ **3 Procedures**   
+  ❌ **3 Triggers**  
   ❌ **PgBarman para o backup**  
-  ❌ **Configurar o monitoramento ativo da base em Postgres**
+  ❌ **Configurar o monitoramento ativo da base em Postgres**  
           Utilizando TemBoard e PgBadger  
-  ❌ **Transformar a base em Postgre em um DW**
+  ❌ **Transformar a base em Postgre em um DW**  
           Usar star schema  
-  ❌ **Criar ETL do banco em Postgre para o DW**
+  ❌ **Criar ETL do banco em Postgre para o DW**  
   ❌ **Criar dicionários de dados os dois banco criados**
 
 ---

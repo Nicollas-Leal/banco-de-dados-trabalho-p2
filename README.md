@@ -10,8 +10,8 @@ Repositório para a matéria de banco de dados (CEFET)
   ✅ **Pgloader para carregar os dados do SQlite para o Postgres**  
   ✅ **3 Views**  
   ✅ **3 Functions**  
-  ❌ **3 Procedures**   
-  ❌ **3 Triggers**  
+  ✅ **3 Procedures**   
+  ✅ **3 Triggers**  
   ❌ **PgBarman para o backup**  
   ❌ **Configurar o monitoramento ativo da base em Postgres**  
           Utilizando TemBoard e PgBadger  

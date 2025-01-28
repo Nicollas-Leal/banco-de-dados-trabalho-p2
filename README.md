@@ -12,7 +12,7 @@ Repositório para a matéria de banco de dados (CEFET)
   ✅ **3 Functions**  
   ✅ **3 Procedures**   
   ✅ **3 Triggers**  
-  ❌ **PgBarman para o backup**  
+  ✅ **PgBarman para o backup**  
   ❌ **Configurar o monitoramento ativo da base em Postgres**  
           Utilizando TemBoard e PgBadger  
   ❌ **Transformar a base em Postgre em um DW**  

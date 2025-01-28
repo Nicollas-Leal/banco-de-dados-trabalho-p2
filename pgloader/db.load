@@ -1,9 +1,0 @@
-LOAD DATABASE
-     FROM sqlite:///data/database.sqlite
-     INTO postgresql://postgres:postgres@postgres:5432/formula1
-
-WITH include drop, create tables, create indexes, reset sequences
-
-SET work_mem to '16MB', maintenance_work_mem to '512MB'
-
-;

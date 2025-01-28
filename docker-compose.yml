@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  postgres:
+    build: ./app
+    volumes:
+      - ./postgres-database:/var/lib/postgresql/data
+      - ./sqlite:/data
+      - ./barman:/var/lib/barman
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: formula1
+    ports:
+      - "15432:5432"
+    networks:
+      - postgres-network 
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "nicollasleal@outlook.com"
+      PGADMIN_DEFAULT_PASSWORD: "postgres"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+  pgloader:
+    build: ./pgloader
+    volumes:
+      - ./sqlite:/data
+      - ./postgres-database:/var/lib/postgresql/data
+    depends_on:
+      - postgres
+    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    networks:
+      - postgres-network
+networks: 
+  postgres-network:
+    driver: bridge
